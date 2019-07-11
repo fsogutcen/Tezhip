@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resim Uygulaması</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!--önce jquery, tüm scriptlerden önce yazılır-->
+	<script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(){
+			var imgpath = "img/galeri/resim1_b.jpg";
+			$(".img-fluid").attr("src", imgpath);
+			$(".rounded-circle").hover(function(){
+				var imgpath = $(this).attr("src");
+				$(".img-fluid").attr("src", imgpath);
+			})
+		})
+	</script>
+
+	<script>
+		$(document).ready(function(){
+
+			$(".dropdown1").hover(function(){
+
+				$(".dropdown-menu1").fadeIn();
+
+			 }, function(){
+
+			 	$(".dropdown-menu1").hide();
+
+			});
+		})
+	</script>
+
+	<style>
+		.dropdown-item:hover{
+			background-color:#ccc; 
+		}
+
+	</style>
+
+
+
+
+
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="anasayfa.html"><img style="width: 50px; height: 50px;" src="img/yy.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anasayfa.html">Anasayfa<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown dropdown1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Galeriler
+          </a>
+          <div class="dropdown-menu dropdown-menu1 mt-0" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="galeri.html">Galeri-1</a>
+            <a class="dropdown-item" href="galeri_.html">Galeri-2</a>
+          </div>
+        </li> 
+       
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+
+      </ul>
+  		<form class="form-inline">
+  	    <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+  	    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+  	    </form>
+    </div>
+    
+</nav>
+
+	<!-- navbar bitiş -->
+	<div class="col-sm text-center">
+		<img class="img-fluid" style="width: 400px; height: 400px;">
+	</div>
+
+	<div class="text-center">
+		<h3 style="color: #000">GALERİ</h3>
+	</div>
+
+	<div class="col-sm text-center">	
+		
+			<img class="rounded-circle" src="img/galeri/resim1_b.jpg" alt="rsm1" style="width: 200px; height: 200px">
+			
+		
+		<img class="rounded-circle" src="img/galeri/resim2_b.jpg" alt="rsm2" style="width: 200px; height: 200px">
+		
+		
+		<img class="rounded-circle" src="img/galeri/resim3_b.jpg" alt="rsm3" style="width: 200px; height: 200px">
+		
+		
+		<img class="rounded-circle" src="img/galeri/resim4_b.jpg" alt="rsm4" style="width: 200px; height: 200px">
+		<img class="rounded-circle" src="img/galeri/resim5_b.jpg" alt="rsm5" style="width: 200px; height: 200px">
+	</div>
+
+
+
+<!-- footer başlangıc -->
+<footer>
+  <div class="row bg-light mt-5" style="height: 50px; ">
+    <div class="col text-center mt-2" style="color: #000 ; font-weight: bold; font-style: italic;">
+      <p class="copyright text-muted">Designed by Fatıma Sena Öğütçen &copy; 2019</p>
+
+    </div>
+    
+  </div>
+</footer>
+
+</body>
+</html>

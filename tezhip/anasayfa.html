@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Anasayfa</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style-social.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+  <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $(".dropdown1").hover(function () {
+
+        $(".dropdown-menu1").fadeIn();
+
+      }, function () {
+
+        $(".dropdown-menu1").hide();
+
+      });
+    })
+  </script>
+
+
+  <style>
+    .dropdown-item:hover {
+      background-color: #ccc;
+    }
+
+    .card-title {
+      text-align: center;
+    }
+
+    .kartlar {
+      width: 10rem;
+      height: 10rem;
+      background-color: rgb(235, 235, 235);
+      border: none;
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      transition: all 2s ease-in-out;
+      cursor: pointer;
+      
+   
+    }
+
+    .kartlar:hover {
+      width: 18rem;
+      height: 18rem;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+
+    }
+
+    .baslik{
+      text-align: center;
+    }
+
+    a:hover{
+      text-decoration: none;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="anasayfa.html"><img style="width: 50px; height: 50px;" src="img/yy.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anasayfa.html">Anasayfa<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown dropdown1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Galeriler
+          </a>
+          <div class="dropdown-menu dropdown-menu1 mt-0" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="galeri.html">Galeri-1</a>
+            <a class="dropdown-item" href="galeri_.html">Galeri-2</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+    </div>
+
+  </nav>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slider/2.jpg" class="d-block w-100" alt="..." style="height: 550px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider/tezhib11.jpg" class="d-block w-100" alt="..." style="height: 550px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider/6.jpg" class="d-block w-100" alt="..." style="height: 550px;">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- card başlangıc -->
+  <div class="container mt-10 mb-10">
+
+    <div class="row">
+
+      <div class="col-sm ml-5 ">
+
+        <div class="baslik">
+          <a href="tezhipNedir.html"><img src="img/tezhibNedir.jpg" class="kartlar mb-3" alt="tezhipNedirFoto">
+            <div>
+              <h5 style="color: black;text-decoration: none;">Tezhip Nedir?</h5>
+            </div></a>  
+        </div>
+      </div>
+      <!--col-sm sonu -->
+
+      <div class="col-sm">
+
+        <div class="baslik">
+          <a href="malzemeler.html"><img src="img/tezhipMalzeme.jpg" class="kartlar mb-3" alt="malzemelerFoto"> 
+            <div>
+              <h5 style="color: black;text-decoration: none;">Kullanılan Malzemeler</h5>
+            </div></a>        
+        </div>
+      </div>
+      <!--col-sm sonu -->
+
+
+      <div class="col-sm">
+
+        <div class="baslik">
+          <a href="motifler.html"><img src="img/motifler.jpg" class="kartlar mb-3" alt="motiflerFoto">
+            <div>
+              <h5 style="color: black;text-decoration: none;">Motifler</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--col-sm sonu -->
+
+    </div>
+    <!--Row Sonu -->
+  </div>
+
+  <!-- card bitiş -->
+
+
+  <!-- footer başlangıc -->
+  <footer>
+    <hr style="width: 60%;">
+    <br>
+    <div class="row" style="height: 50px; ">
+
+      <div class="col-12 social">
+        <ul>
+          <li>
+            <a class="facebook" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+
+            </a>
+          </li>
+          <li>
+            <a class="twitter" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-google-plus" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 text-center mt-2" style="color: #000 ; font-weight: bold; font-style: italic;">
+        <p class="copyright text-muted">Designed by Fatıma Sena Öğütçen &copy; 2019</p>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

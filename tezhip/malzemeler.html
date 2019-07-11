@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Anasayfa</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <link rel="stylesheet" type="text/css" href="css/style-social.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+  <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".dropdown1").hover(function () {
+
+        $(".dropdown-menu1").fadeIn();
+
+      }, function () {
+
+        $(".dropdown-menu1").hide();
+
+      });
+    })
+  </script>
+
+  <style>
+    .dropdown-item:hover {
+      background-color: #ccc;
+    }
+
+    .bosluk {
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="anasayfa.html"><img style="width: 50px; height: 50px;" src="img/yy.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anasayfa.html">Anasayfa<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown dropdown1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Galeriler
+          </a>
+          <div class="dropdown-menu dropdown-menu1 mt-0" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="galeri.html">Galeri-1</a>
+            <a class="dropdown-item" href="galeri_.html">Galeri-2</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+    </div>
+
+  </nav>
+  <!-- Navbar bitiş -->
+
+
+  <div class="bosluk"></div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 text-center" style="height:400px;">
+        <!--flexbox ile yapılarak vertical-align ile ortalanabilir-->
+
+        <img style="width:550px !important" src="img/tezhip-malzeme1.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="container">
+    <div class="row ">
+
+      <div class="col-12 text-center">
+        <h1 class="about" style="line-height:240px;font-family: 'Lemonada', cursive ;">KULLANILAN MALZEMELER</h1>
+      </div>
+    </div>
+
+    <div class="container" style="font-family: 'Lemonada', cursive ;">
+
+      <div class="row">
+        <div class="col-12">
+          <h3> ALTIN </h3>
+        </div><br><br>
+
+        <div class="col-4"><img class="img-malzeme" src="img/malzemeler/defter-altin.jpg" alt=""></div>
+
+        <div class="col-8" style="display:flex;align-items:center; ">
+          <p style="font-size:16px !important;">
+            Tezhib sanatının başlıca malzemesidir. Bugün tezhib sanatı ile uğraşan müzehhibler altını varaklar halinde
+            hazır
+            temin etmektedirler. Altını ezme işi müzehhibler tarafından yapılmaktadır.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-12">
+          <h3> FIRÇALAR </h3>
+        </div><br><br>
+
+        <div class="col-4"><img class="img-malzeme" src="img/malzemeler/firca.jpg" alt=""></div>
+
+        <div class="col-8" style="display:flex;align-items:center; ">
+
+          <p style="font-size:16px !important;">
+
+            Tezhibde kullanılan fırçalar, kullanıldıkları yerlere göre isim alırlar. Müzehhibler bugün samur kılından
+            hazır
+            fırçalar kullanmaktadır.
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-12">
+          <h3> MÜHRELER </h3>
+        </div><br><br>
+
+        <div class="col-4"><img class="img-malzeme" src="img/malzemeler/muhre.jpg" alt=""></div>
+
+        <div class="col-8" style="display:flex;align-items:center; ">
+          <p style="font-size:16px !important;">
+
+            Tezhibte altını kullandıktan sonra parlatmak ve boya görünümünden çıkarmak için kullanılır. Kağıt mühresi ve
+            zermühre olmak üzere iki çeşit mühre vardır.
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-12">
+          <h3> BOYALAR </h3>
+        </div><br><br>
+
+        <div class="col-4"><img class="img-malzeme" src="img/malzemeler/guaj-boya.jpg" alt=""></div>
+
+        <div class="col-8" style="display:flex;align-items:center; ">
+          <p style="font-size:16px !important;">
+
+            Eskiden kök boya ve toprak boyası kullanılırken, günümüzde müzehhibler hazır şişe boyaları
+            kullanmaktadırlar.
+            Bunlar (gouache) sulu boya ve akrilik, ecolin olmak üzere çeşitli boyalardır.
+          </p>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="row">
+        <div class="col-12">
+          <h3> KAĞITLAR </h3>
+        </div><br><br>
+
+        <div class="col-4"><img class="img-malzeme" src="img/malzemeler/kagit-1.jpg" alt=""></div>
+
+        <div class="col-8" style="display:flex;align-items:center; ">
+          <p style="font-size:16px !important;">
+
+            Kitap sanatlarında yazı malzemesi olarak kullanılan kağıtların en eskisi parşömendir. Özellikle mushaflarda
+            bunlar kullanılmıştır. Daha sonra papirüs görülür. Papirüs yerini yavaş yavaş kağıda bırakmıştır.
+            Osmanlıların
+            yaptıkları kağıtlar Avrupa’da önemle aranan kağıt olmuştur. Daha sonra İslam dünyasında Avrupa kağıdı
+            yayılmış
+            özellikle İtalyan kağıdı tercih edilmiştir.
+
+
+          </p>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+
+
+  <!-- footer başlangıc -->
+  <footer>
+      <hr style="width: 60%;">
+      <br>
+      <div class="row" style="height: 50px; ">
+  
+        <div class="col-12 social">
+          <ul>
+            <li>
+              <a class="facebook" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+  
+              </a>
+            </li>
+            <li>
+              <a class="twitter" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="google" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-12 text-center mt-2" style="color: #000 ; font-weight: bold; font-style: italic;">
+          <p class="copyright text-muted">Designed by Fatıma Sena Öğütçen &copy; 2019</p>
+  
+        </div>
+      </div>
+    </footer>
+  
+
+
+
+
+
+</body>
+
+</html>

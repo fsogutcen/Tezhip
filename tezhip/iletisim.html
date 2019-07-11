@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav Bar</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style-social.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+	 <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+
+  <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+
+
+
+
+	<script>
+    $(document).ready(function(){
+
+      $(".dropdown1").hover(function(){
+
+        $(".dropdown-menu1").fadeIn();
+
+       }, function(){
+
+        $(".dropdown-menu1").hide();
+
+      });
+    })
+  </script>
+
+  <style>
+    .dropdown-item:hover{
+      background-color:#ccc; 
+    }
+
+  </style>
+
+	<style>
+		h3{
+      text-shadow: 1px 1px 1px #ccc;
+    }
+	</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="anasayfa.html"><img style="width: 50px; height: 50px;" src="img/yy.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anasayfa.html">Anasayfa<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown dropdown1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Galeriler
+          </a>
+          <div class="dropdown-menu dropdown-menu1 mt-0" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="galeri.html">Galeri-1</a>
+            <a class="dropdown-item" href="galeri_.html">Galeri-2</a>
+          </div>
+        </li> 
+       
+        <li class="nav-item">
+          <a class="nav-link" href="iletisim.html">İletişim</a>
+        </li>
+
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Ara</button>
+        </form>
+    </div>
+    
+</nav>
+
+<div class="container mt-3">
+  
+  <div class="row justify-content-center">
+
+    
+      
+    <div class="col-6">
+      <div class="col-12 text-center">
+      <h3>İletişim Formu</h3>
+    </div>
+      <form method="post" action="">
+        <div class="form-group">
+          <label for="ad">Ad</label>
+          <input type="text" class="form-control" id="ad" aria-describedby="emailHelp" placeholder="Adınız" required>
+        </div>
+
+        <div class="form-group">
+          <label for="soyad">Soyad</label>
+          <input type="text" class="form-control" id="soyad" aria-describedby="emailHelp" placeholder="Soyadınız" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Telefon</label>
+          <input type="text" class="form-control" id="tel" aria-describedby="emailHelp" placeholder="Telefon" required>
+        </div>
+
+        <div class="form-group">
+          <label for="adres">Adres</label>        
+          <textarea class="form-control" id="adres" rows="3" required></textarea>
+        </div>
+        
+        <div class="text-center mb-4">          
+           <button type="submit" class="btn btn-primary">Gönder</button>
+           <button type="reset" class="btn btn-primary">Sil</button>
+        </div>
+       
+      </form>
+
+    </div> 
+    <div class="col-6">
+      
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6332476651896!2d28.868890015335996!3d40.98951102852855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabca50547e5f5%3A0xab73420ce892f621!2sBak%C4%B1rk%C3%B6y+Branch+of+the+Academy+Bilge+Adam!5e0!3m2!1sen!2str!4v1550140562242" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+
+    </div>
+    
+  </div><!--row2 sonu-->
+</div> <!--Container Sonu -->
+
+
+
+
+<!-- footer başlangıc -->
+<footer>
+    <hr style="width: 60%;">
+    <br>
+    <div class="row" style="height: 50px; ">
+
+      <div class="col-12 social">
+        <ul>
+          <li>
+            <a class="facebook" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+
+            </a>
+          </li>
+          <li>
+            <a class="twitter" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-google-plus" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 text-center mt-2" style="color: #000 ; font-weight: bold; font-style: italic;">
+        <p class="copyright text-muted">Designed by Fatıma Sena Öğütçen &copy; 2019</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
